@@ -1,0 +1,30 @@
+.. bros documentation master file, created by
+   sphinx-quickstart on Sat Jan  2 14:13:34 2021.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to bros.!
+================================
+
+このページはシミュレーション分野で研究するにあたって必要な知識等を
+共有するためのページです。
+特にこれまで直面してきたエラーについて記載していきたいと思っています。
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+   :numbered:
+
+   /Error/GROMACS
+   /Error/LAMMPS
+   /Error/MPDyn
+
+
+
+.. Indices and tables
+.. ==================
+
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`
