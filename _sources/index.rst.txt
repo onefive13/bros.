@@ -6,17 +6,25 @@
 Welcome to bros.!
 ================================
 
+このページはシミュレーション分野で研究するにあたって必要な知識等を
+共有するためのページです。
+特にこれまで直面してきたエラーについて記載していきたいと思っています。
+
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+   :numbered:
 
-   doc.rst
+   /Error/GROMACS
+   /Error/LAMMPS
+   /Error/MPDyn
 
 
 
-Indices and tables
-==================
+.. Indices and tables
+.. ==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`

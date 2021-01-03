@@ -1,0 +1,17 @@
+# GROMACS
+
+## Error1
+
+> Program:     gmx mdrun, version 2020.3
+> Source file: src/gromacs/options/options.cpp (line 179)
+> Function:    void gmx::internal::OptionSectionImpl::finish()
+> MPI rank:    6 (out of 8)
+> Error in user input:
+> Invalid input values
+> In option s
+> Required option was not provided, and the default file 'topol' does not
+> exist or is not accessible.
+> The following extensions were tried to complete the file name:
+> .tpr
+
+これは典型的なエラーである。GROMACSではgromppコマンドの後にmdrunを実行するが、これらのコマンドをスクリプトとして一連の流れで実行することが多い。この場合、gromppが何らかの要因で失敗して.tprのファイルが作られないと次のmdrunも当然失敗する。これにより.tprのファイルが存在しないことでエラーが発生している。そのため上記のエラーは気にせずに、gromppのエラーを確認して対処すればこのエラーも解決することになる。
